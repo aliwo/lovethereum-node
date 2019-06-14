@@ -5,8 +5,8 @@ export const getLove = (req, res) => {
     res.send({ id: 1 });
 };
 
-export const testLove = (req, res) => {
-    const lo = new Love({ url: 'hihi', message: 'hello' });
+export const genLove = (req, res) => {
+    const lo = new Love({ url: 'hihi', message: req.body.json.message });
     lo.save();
     res.send({ okay: true });
 };
