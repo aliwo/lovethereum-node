@@ -5,6 +5,6 @@ const LoveSchema = mongoose.Schema({
     message: String,
 });
 
-const model = mongoose.Model('Love', LoveSchema);
+const model = mongoose.model('Love', LoveSchema);
 
 export default model;
