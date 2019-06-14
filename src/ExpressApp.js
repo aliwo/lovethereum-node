@@ -1,16 +1,10 @@
 import express from 'express';
 import helmet from 'helmet';
-
 import './db';
+import loveRouter from './Routers/love';
 
 const app = express();
-
 app.use(helmet());
-
-const getLove = (req, res) => {
-    res.send({ id: 1 });
-};
-
-app.get('/love', getLove);
+app.use('/love', loveRouter);
 
 export default app;
