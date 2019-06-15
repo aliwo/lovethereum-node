@@ -4,7 +4,7 @@
   "module": "main.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
-    "test": "make test"
+    "test": "node ./node_modules/mocha/bin/mocha --require esm"
   },
   "dependencies": {
     "dotenv": "^8.0.0",

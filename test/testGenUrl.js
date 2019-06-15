@@ -1,4 +1,4 @@
-import { suite } from 'mocha';
+import { suite, test } from 'mocha';
 
 const assert = require('assert');
 const { randomUrl } = require('../src/Libs/RandomUrl');
