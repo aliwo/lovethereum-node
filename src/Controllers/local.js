@@ -1,7 +1,23 @@
+import Love from '../Models/Love';
+
 export const getLocal = (req, res) => {
-    res.send({'msg':'hello, world!'});
-}
+  res.send({ message: 'hello, world!' });
+};
 
 export const postLocal = (req, res) => {
-    console.log(req.body);
-}
+  const {
+    body: { message },
+  } = req;
+  const localLove = new Love({ url: '', message });
+  localLove.save();
+  res.send({ message: 'done', localLove });
+};
+
+export const getLock = async (req, res) => {
+  const {
+    params: { id },
+  } = req;
+  const localLove = await Love.findById(id);
+  console.log(localLove);
+  res.send({ message: localLove.message });
+};
