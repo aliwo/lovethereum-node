@@ -1,8 +1,8 @@
 import Love from '../Models/Love';
 
 
-export const getLove = (req, res) => {
-    res.send({ id: 1 });
+export const getLoveContract = (req, res) => {
+    res.send({ address: 1 }); // db로 부터 가장 최신의 address 를 가져옵니다.
 };
 
 export const genLove = (req, res) => {
