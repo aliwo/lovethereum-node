@@ -2,10 +2,10 @@ import mongoose from 'mongoose';
 
 const ContractSchema = mongoose.Schema({
     address: String,
-    abi: String,
+    abi: Object,
     version: String,
 });
 
-const model = mongoose.Model('Address', ContractSchema);
+const model = mongoose.model('Contract', ContractSchema);
 
 export default model;
