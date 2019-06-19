@@ -4,7 +4,8 @@
   "module": "main.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
-    "test": "node ./node_modules/mocha/bin/mocha --require esm"
+    "test": "node ./node_modules/mocha/bin/mocha --require esm",
+    "insert-contract": "node ./deployment/insertContract.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
