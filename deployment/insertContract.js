@@ -1,4 +1,5 @@
 import Contract from '../src/Models/Contract';
+import '../src/db';
 
 const v1 = new Contract({
     address: '0x10fff3f44af639d3cdaff8cd529b0e0419165d51',
