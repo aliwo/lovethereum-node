@@ -1,49 +1,49 @@
 {
-  "name": "lovethereum",
-  "main": "index.js",
-  "module": "main.js",
-  "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
-    "test": "node ./node_modules/mocha/bin/mocha --require esm",
-    "insert-contract": "node ./deployment/insertContract.js"
-  },
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.0.0",
-    "esm": "^3.2.25",
-    "express": "^4.17.1",
-    "helmet": "^3.18.0",
-    "js-sha1": "^0.6.0",
-    "mongoose": "^5.5.11"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
-    "@babel/node": "^7.2.2",
-    "@babel/plugin-transform-runtime": "^7.4.4",
-    "@babel/polyfill": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/runtime": "^7.4.5",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.3",
-    "mocha": "^6.1.4",
-    "nodemon": "^1.18.10"
-  },
-  "description": "Long Live! Your 'love message' stays forever in ethereum block chain.",
-  "version": "1.0.0",
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aliwo/lovethereum-node.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aliwo/lovethereum-node/issues"
-  },
-  "homepage": "https://github.com/aliwo/lovethereum-node#readme"
+    "name": "lovethereum",
+    "main": "index.js",
+    "module": "main.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node src/index.js",
+        "test": "node ./node_modules/mocha/bin/mocha --require esm",
+        "insert-contract": "babel-node ./deployment/insertContract.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.0.0",
+        "esm": "^3.2.25",
+        "express": "^4.17.1",
+        "helmet": "^3.18.0",
+        "js-sha1": "^0.6.0",
+        "mongoose": "^5.5.11"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.4.0",
+        "@babel/node": "^7.2.2",
+        "@babel/plugin-transform-runtime": "^7.4.4",
+        "@babel/polyfill": "^7.4.0",
+        "@babel/preset-env": "^7.4.2",
+        "@babel/runtime": "^7.4.5",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb-base": "^13.1.0",
+        "eslint-plugin-import": "^2.17.3",
+        "mocha": "^6.1.4",
+        "nodemon": "^1.18.10"
+    },
+    "description": "Long Live! Your 'love message' stays forever in ethereum block chain.",
+    "version": "1.0.0",
+    "directories": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aliwo/lovethereum-node.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/aliwo/lovethereum-node/issues"
+    },
+    "homepage": "https://github.com/aliwo/lovethereum-node#readme"
 }
