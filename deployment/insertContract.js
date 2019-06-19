@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 import Contract from '../src/Models/Contract';
 import '../src/db';
 
@@ -103,4 +104,6 @@ const v1 = new Contract({
         },
     ],
 });
-v1.save();
+v1.save(() => {
+    mongoose.disconnect();
+});
