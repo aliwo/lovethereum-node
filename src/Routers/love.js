@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getLoveContract, genLove, registerLoveContract } from '../Controllers/love';
+import { getLoveContract, genLove } from '../Controllers/love';
 
 const loveRouter = Router();
 loveRouter.get('/contract', getLoveContract);
