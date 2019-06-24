@@ -11,7 +11,7 @@ export const postLocal = (req, res) => {
     } = req;
     const localLove = new Love({ url: randomUrl(), message });
     localLove.save();
-    res.send({ message: 'done', localLove });
+    res.send(localLove);
 };
 
 export const getLock = async (req, res) => {
