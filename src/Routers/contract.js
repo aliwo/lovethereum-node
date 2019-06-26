@@ -2,6 +2,6 @@ import { Router } from 'express';
 import { getLoveContract } from '../Controllers/contract';
 
 const contractRouter = Router();
-contractRouter.get('/contract', getLoveContract);
+contractRouter.get('/', getLoveContract);
 
 export default contractRouter;

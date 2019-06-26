@@ -14,7 +14,7 @@ export const postLove = (req, res) => {
     const {
         body: { message },
     } = req;
-    const localLove = new Love({ url: randomUrl(), message });
+    const localLove = new Love({ url: randomUrl(), message, state: false });
     localLove.save();
     res.send(localLove);
 };
