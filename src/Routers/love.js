@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { genLove } from '../Controllers/love';
+import { getLove, postLove } from '../Controllers/love';
 
 const loveRouter = Router();
-loveRouter.get('/test', genLove);
+loveRouter.post('', postLove);
+loveRouter.get('/:id', getLove);
 
 export default loveRouter;

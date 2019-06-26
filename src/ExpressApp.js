@@ -5,7 +5,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import loveRouter from './Routers/love';
 import contractRouter from './Routers/contract';
-import localRouter from './Routers/local';
+import testRouter from './Routers/test';
 
 const app = express();
 app.use(helmet());
@@ -22,6 +22,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use('/love', loveRouter);
 app.use('/contract', contractRouter);
-app.use('/local', localRouter);
+app.use('/test', testRouter);
 
 export default app;
