@@ -5,7 +5,7 @@ export const getLove = async (req, res) => {
     const {
         params: { id },
     } = req;
-    const localLove = await Love.findById(id);
+    const localLove = await Love.findOne({ url: id });
     console.log(localLove);
     res.send({ message: localLove.message });
 };
